@@ -281,7 +281,11 @@ grub_crypto_cipher_handle_t (*grub_zfs_load_key) (const struct grub_zfs_key *key
  */
 #define MAX_SUPPORTED_FEATURE_STRLEN 50
 static const char *spa_feature_names[] = {
-  "org.illumos:lz4_compress",NULL
+  "org.illumos:lz4_compress",
+  "com.delphix:hole_birth",
+  "com.delphix:embedded_data",
+  "com.delphix:extensible_dataset",
+  NULL
 };
 
 static int
